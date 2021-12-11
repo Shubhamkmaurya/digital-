@@ -21,10 +21,10 @@ const App = () => {
       this.state = {time : new Date() };
     }
    currentTime() {
-     this,setState({time: new Date() });
+     this.setState({time: new Date() });
    }
     componentDidMount () {
-    this.interval = setInterval(() => this.currentTime(), 1000)}
+    this.interval = setInterval(() => this.currentTime(), 1000);}
   }
   componentDidMount() {
     clearInterval = (this.Interval);
@@ -33,10 +33,10 @@ const App = () => {
      return (
     <div id="main">
       <div className="date-time">
-       <h2 id="time">{this.state.time.toLocaleTimeString()} </h2>
+       <h2 id="time">{this.state.time.toLocaleString()} </h2>
        </div>
     </div>
-  )
+  );
 }
 
   }
