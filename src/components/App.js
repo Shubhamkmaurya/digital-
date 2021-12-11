@@ -1,4 +1,4 @@
-import {Component, useState} form `react`
+import React {Component, useState} form "react";
 import React from 'react'
 const App = () => {
 
@@ -26,20 +26,18 @@ const App = () => {
     componentDidMount () {
     this.interval = setInterval(() => this.currentTime(), 1000);}
   }
-  componentDidMount() {
+  componentWillUnmount() {
     clearInterval = (this.Interval);
   }
   render(){
      return (
-    <div id="main">
+    
       <div className="date-time">
        <h2 id="time">{this.state.time.toLocaleString()} </h2>
        </div>
-    </div>
   );
 }
-
-  }
+}
  
 
 export default App;
