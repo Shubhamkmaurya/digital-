@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/App.css';
 const App = () => {
 
 //When Digital Clock is mounted, the Digital Clock should update the state variable time with the current time.
